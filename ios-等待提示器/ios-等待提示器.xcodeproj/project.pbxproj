@@ -509,6 +509,7 @@
 				1DAD26B11ECB4D9F00142CF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DAD26B21ECB4D9F00142CF5 /* Build configuration list for PBXNativeTarget "ios-等待提示器Tests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +518,7 @@
 				1DAD26B41ECB4D9F00142CF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DAD26B51ECB4D9F00142CF5 /* Build configuration list for PBXNativeTarget "ios-等待提示器UITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +527,7 @@
 				1DAD26B71ECB4D9F00142CF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

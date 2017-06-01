@@ -72,7 +72,7 @@
                     //参数手势点击事件对象
 -(void) tapOneAct:(UITapGestureRecognizer*) tap
 {
-    NSLog(@"但次点击");
+    NSLog(@"单次点击");
                     //获取手势监控的试图对象
     UIImageView* imageView = (UIImageView*) tap.view;
                     //开始动画过程

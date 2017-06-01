@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -58,14 +59,21 @@
         
         
         
-        _alertView = [[UIAlertView alloc]initWithTitle:@"警告" message:@"你的手机电量过低，即将自动关机！" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"OK",@"22",@"11", nil];
+        _alertView = [[UIAlertView alloc]initWithTitle:@"警告" message:@"手机电量不足20%" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"OK", nil];
         
         [_alertView show];
+        
+        
+        
         
     }
     else if (btn.tag == 102)
     {
-        //款高不可变
+        //停止并隐藏
+        [_activityIndicator stopAnimating];
+        
+        //宽高不可变
+        
         _activityIndicator = [[UIActivityIndicatorView alloc]initWithFrame:CGRectMake(100, 300, 80, 80)];
         
         _activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
@@ -75,8 +83,8 @@
         //启动并显示
         [_activityIndicator startAnimating];
         self.view.backgroundColor = [UIColor blackColor];
-        //停止并隐藏
-//        [_activityIndicator stopAnimating];
+        
+        
     }
     
     
@@ -85,7 +93,21 @@
 
 - (void) alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    NSLog(@"index = %d\n",buttonIndex);
+    NSLog(@"index = %li\n",buttonIndex);
+    if (buttonIndex == 0)
+    {
+        NSLog(@"it's OK!");
+
+    }
+    else if(buttonIndex == 1 ){
+        
+        _alertView2 = [[UIAlertView alloc] initWithTitle:@"警告" message:@"是否要进入低电量模式？" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes", nil];
+        
+        
+        [_alertView2 show];
+        
+    }
+    
     
 }
 

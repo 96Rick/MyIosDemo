@@ -41,6 +41,7 @@
     //
     pinch.scale = 1 ;
     
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -12,6 +12,9 @@
 {
     //警告器对话框对象
     UIAlertView* _alertView ;
+    UIAlertView* _alertView;
+    UIAlertView *_alertView2;
+    
     
     //等待提示对象
     //当下载或加载比较大的对象时，可以显示此控件，处于提示等待状态
