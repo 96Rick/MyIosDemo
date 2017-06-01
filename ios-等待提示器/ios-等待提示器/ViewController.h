@@ -11,8 +11,7 @@
 @interface ViewController : UIViewController<UIAlertViewDelegate>
 {
     //警告器对话框对象
-    UIAlertView* _alertView ;
-    UIAlertView* _alertView;
+    
     UIAlertView *_alertView2;
     
     

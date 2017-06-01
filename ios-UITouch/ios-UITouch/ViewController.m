@@ -56,7 +56,7 @@
 {
     UITouch* touch = [touches anyObject];
     
-    //获得当前手指在屏幕上的相对位置
+    //获得当前手指在屏幕上的相对位置 
     //相对于当前视图的坐标
     CGPoint pt = [touch locationInView:self.view];
     
