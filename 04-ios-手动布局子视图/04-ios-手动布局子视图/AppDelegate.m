@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  01 ios- XIB
+//  04-ios-手动布局子视图
 //
-//  Created by Rick on 2017/6/1.
+//  Created by Rick on 2017/6/6.
 //  Copyright © 2017年 apple. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "VCRoot.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,31 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
-    //创建一个窗口对象
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds] ;
-    
-    //方法一：
-    //创建跟视图控制器对象
-    //参数1：创建时加载的XIB资源文件名，加载XIB作为视图控制器视图
-    //参数2：是指主文件包，XIB所在的位置
-    //mainBundle 是主资源文件包
-    //如果传空值，函数会自动到mainbundle中找
-    //显示加载xib资源文件
-    VCRoot* root1 =[[VCRoot alloc] initWithNibName:@"VCRoot" bundle:[NSBundle mainBundle]];
-    
-    //方法二：
-    //如果系统中有XIB的名字根类名VCRoot相同
-    //init函数会自动去加载VCRoot.xib文件
-    
-    VCRoot *root = [[VCRoot alloc]init];
-    
-    self.window.rootViewController = root;
-    
-    
-    [self.window makeKeyAndVisible];
-    
+    // Override point for customization after application launch.
     return YES;
 }
 
