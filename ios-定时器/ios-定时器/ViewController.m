@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#pragma mark –
+#pragma mark onClick
 
 @interface ViewController ()
 
