@@ -51,10 +51,8 @@
     
     
     static BOOL isDisplay = YES;
-    [super.navigationController setNavigationBarHidden:isDisplay animated:YES];
     
-  
-//[[UIApplication sharedApplication] setStatusBarHidden:YES];
+    [super.navigationController setNavigationBarHidden:isDisplay animated:YES];
     
     isDisplay = !isDisplay;
     

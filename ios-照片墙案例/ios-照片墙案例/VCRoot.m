@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //设置导航栏是否透明
     self.navigationController.navigationBar.translucent = YES;
     self.title = @"照片墙";
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
@@ -84,6 +85,7 @@
     imageShow.imageTag = imageView.tag;
     
     [self.navigationController pushViewController:imageShow animated:YES];
+    
 }
 
 /*方法二
